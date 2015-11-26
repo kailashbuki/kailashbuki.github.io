@@ -23,6 +23,7 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
+    // margin: 5% 10%;
 }
 
 
@@ -99,7 +100,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: $a-hover-color;
         text-decoration: underline;
     }
 }
@@ -203,4 +204,32 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+
+/** 
+* My custom
+*/
+.left{
+    float: left;
+    margin-right: 25px;
+}
+
+.footer{
+    margin-top: 10%;
+    border-top:1px solid #f1f1f1;
+    color: #666;
+}
+
+.home {
+    margin-top: 7%;
+}
+
+.site-header {
+    border-bottom: none !important;
+}
+
+#pp {
+    max-width: 92%;
 }
