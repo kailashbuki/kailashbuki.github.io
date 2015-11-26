@@ -23,7 +23,6 @@ body {
     -o-font-feature-settings: "kern" 1;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
-    // margin: 5% 10%;
 }
 
 
@@ -209,11 +208,15 @@ pre {
 
 
 /** 
-* My custom
+* My custom css goes here
 */
 .left{
     float: left;
     margin-right: 25px;
+}
+
+.right{
+    text-align: justify;    
 }
 
 .footer{
@@ -223,7 +226,7 @@ pre {
 }
 
 .home {
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 .site-header {
@@ -232,4 +235,17 @@ pre {
 
 #pp {
     max-width: 92%;
+}
+
+.blog-date {
+    font-size: 18px;    
+    color: $grey-color;
+}
+
+.blog-link {
+    font-size: 18px;    
+}
+
+.post-title {
+    font-size: 1.5em !important;
 }
