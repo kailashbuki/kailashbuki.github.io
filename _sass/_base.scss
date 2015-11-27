@@ -212,11 +212,11 @@ pre {
 */
 .left{
     float: left;
-    margin-right: 25px;
+    margin-right: 5px;
 }
 
 .right{
-    text-align: justify;    
+    text-align: right;    
 }
 
 .footer{
@@ -234,7 +234,9 @@ pre {
 }
 
 #pp {
-    max-width: 92%;
+    max-width: 72%;
+    border: 1px solid #fafafa;
+    border-radius: 10px;
 }
 
 .blog-date {
@@ -248,4 +250,9 @@ pre {
 
 .post-title {
     font-size: 1.5em !important;
+}
+
+/* disqus customisation */
+li .tab-community {
+    display: none;   
 }
