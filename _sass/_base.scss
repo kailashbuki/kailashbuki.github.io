@@ -207,7 +207,7 @@ pre {
 
 
 
-/** 
+/**
 * My custom css goes here
 */
 .footer{
@@ -225,12 +225,12 @@ pre {
 }
 
 .blog-date {
-    font-size: 18px;    
+    font-size: 18px;
     color: $grey-color;
 }
 
 .blog-link {
-    font-size: 18px;    
+    font-size: 18px;
 }
 
 .post-title {
@@ -239,13 +239,13 @@ pre {
 
 /* disqus customisation */
 li .tab-community {
-    display: none;   
+    display: none;
 }
 
 .intro {
     background-image: url(/assets/pp-mug.png);
     background-repeat: no-repeat;
-    margin-bottom: 55px;    
+    //margin-bottom: 55px;
 }
 
 .intro .brief {
