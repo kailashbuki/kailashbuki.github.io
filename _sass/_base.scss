@@ -225,12 +225,12 @@ pre {
 }
 
 .blog-date {
-    font-size: 18px;
+    font-size: 1.1em;
     color: $grey-color;
 }
 
 .blog-link {
-    font-size: 18px;
+    font-size: 1.2em;
 }
 
 .post-title {
@@ -243,21 +243,17 @@ li .tab-community {
 }
 
 .intro {
-    background-image: url(/assets/pp-mug.png);
-    background-repeat: no-repeat;
+    //background-image: url(/assets/pp-mug.png);
+    //background-repeat: no-repeat;
     //margin-bottom: 55px;
 }
 
 .intro .brief {
-    margin-left: 200px;
+    //margin-left: 200px;
 }
 
 .brief li {
     list-style-type: none;
-}
-
-body {
-    font-size: 1.05em;
 }
 
 .section {
@@ -293,6 +289,11 @@ body {
     padding-left: 5px;
 }
 
+.brief li {
+    list-style-type: none;
+    padding-left: 1.4em;
+}
+
 .flag {
     display: inline-block;
 }
@@ -313,4 +314,11 @@ body {
 
 .site-header {
     border-top: none !important;
+}
+
+body {
+    background-image: url(/assets/pp-mug.png);
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: 100px 100px;
 }
