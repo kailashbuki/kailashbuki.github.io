@@ -289,7 +289,7 @@ li .tab-community {
     padding-left: 5px;
 }
 
-.brief li {
+.brief li, .interest li {
     list-style-type: none;
     padding-left: 1.4em;
 }
@@ -321,4 +321,8 @@ body {
     background-repeat: no-repeat;
     background-position: 60% 0%;
     background-size: 100px 100px;
+}
+
+.bracket {
+    font-size: 1.3em;
 }
