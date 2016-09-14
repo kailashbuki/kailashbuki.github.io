@@ -1,0 +1,105 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+
+.navbar {
+    margin-top: 2em;
+}
+
+.navbar-btn {
+    border-radius: 0em;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.section {
+    padding: 10px 25px;
+    background-color: #f9f9f9;
+}
+
+.section-name {
+    font-size: 1.3em;
+}
+
+.section-ribbon {
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.red-ribbon {
+    border-bottom: 2px solid #E74C3C;
+}
+
+.green-ribbon {
+    border-bottom: 2px solid #2ECC71;
+}
+
+.blue-ribbon {
+    border-bottom: 2px solid #3498DB;
+}
+
+.yellow-ribbon {
+    border-bottom: 2px solid #F1C40F;
+}
+
+.gray-ribbon {
+    border-bottom: 2px solid #95A5A6;
+}
+
+.purple-ribbon {
+    border-bottom: 2px solid #8E44AD;
+}
+
+.plain-list{
+    list-style: none;
+    padding-left: 0em;
+}
+
+.adv-list{
+    list-style: circle;
+    padding-left: 20px;
+}
+
+.make-space {
+    margin-left: 0em;
+}
+
+.row {
+    margin-top: 1em;
+}
+
+.pubs li {
+    padding-bottom: 5px;
+}
+
+.pubs .title {
+    font-weight: bold;
+}
+
+.pubs .authors {
+    padding-left: 5px;
+    color: #7F8C8D;
+}
+
+.pubs .conf {
+    font-style: italic;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#main-section {
+    background: #f9f9f9 url("pp-mug.png") no-repeat 2rem 4rem;
+    min-height: 483px;
+}
+
+.bold-title {
+    font-weight: bold;
+}
