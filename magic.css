@@ -33,27 +33,27 @@ body {
 }
 
 .red-ribbon {
-    border-bottom: 2px solid #E74C3C;
+    border-bottom: 1px solid #E74C3C;
 }
 
 .green-ribbon {
-    border-bottom: 2px solid #2ECC71;
+    border-bottom: 1px solid #2ECC71;
 }
 
 .blue-ribbon {
-    border-bottom: 2px solid #3498DB;
+    border-bottom: 1px solid #3498DB;
 }
 
 .yellow-ribbon {
-    border-bottom: 2px solid #F1C40F;
+    border-bottom: 1px solid #F1C40F;
 }
 
 .gray-ribbon {
-    border-bottom: 2px solid #95A5A6;
+    border-bottom: 1px solid #95A5A6;
 }
 
 .purple-ribbon {
-    border-bottom: 2px solid #8E44AD;
+    border-bottom: 1px solid #8E44AD;
 }
 
 .plain-list{
