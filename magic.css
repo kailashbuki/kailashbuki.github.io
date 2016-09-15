@@ -19,7 +19,7 @@ body {
 }
 
 .section {
-    padding: 10px 25px;
+    padding: 7px 10px;
     background-color: #f9f9f9;
 }
 
@@ -66,8 +66,8 @@ body {
     padding-left: 20px;
 }
 
-.make-space {
-    margin-left: 0em;
+.make-vspace {
+    margin-top: 1em;
 }
 
 .row {
@@ -82,12 +82,12 @@ body {
     font-weight: bold;
 }
 
-.pubs .authors {
+.pubs .authors, .author {
     padding-left: 5px;
     color: #7F8C8D;
 }
 
-.pubs .conf {
+.conf {
     font-style: italic;
 }
 
@@ -97,10 +97,18 @@ body {
 
 #main-section {
     background: #f9f9f9 url("pp-mug.png") no-repeat 2rem 4rem;
-    min-height: 483px;
+    /*min-height: 483px;*/
     background-size: 125px;
 }
 
 .bold-title {
     font-weight: bold;
+}
+
+.by {
+    padding-left: 5px;
+}
+
+.one-box {
+    padding: 5px;
 }
