@@ -56,6 +56,10 @@ body {
     border-bottom: 1px solid #8E44AD;
 }
 
+.turquoise-ribbon {
+    border-bottom: 1px solid #1ABC9C;
+}
+
 .plain-list{
     list-style: none;
     padding-left: 0em;
@@ -113,4 +117,8 @@ body {
 
 #about-me {
     padding-right: 1em;
+}
+
+.footer {
+    margin-top: 2em;
 }
