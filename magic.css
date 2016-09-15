@@ -98,6 +98,7 @@ body {
 #main-section {
     background: #f9f9f9 url("pp-mug.png") no-repeat 2rem 4rem;
     min-height: 483px;
+    background-size: 125px;
 }
 
 .bold-title {
