@@ -120,5 +120,9 @@ body {
 }
 
 .footer {
-    margin-top: 2em;
+    margin: 1em auto;
+}
+
+.footer-line {
+    color: #95A5A6;
 }
