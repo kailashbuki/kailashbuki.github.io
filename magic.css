@@ -120,9 +120,10 @@ body {
 }
 
 .footer {
-    margin: 1em auto;
+    margin: 1em 3em;
 }
 
 .footer-line {
     color: #95A5A6;
+    padding-left: 2em;
 }
