@@ -79,6 +79,7 @@ body {
 }
 
 .pubs li {
+    padding-left: 5px;
     padding-bottom: 5px;
 }
 
@@ -100,7 +101,7 @@ body {
 }
 
 #main-section {
-    background: #f9f9f9 url("pp-mug-1.png") no-repeat 1rem 4rem;
+    background: #f9f9f9 url("pp-mug.png") no-repeat 1rem 4rem;
 }
 
 .bold-title {
@@ -126,4 +127,8 @@ body {
 .footer-line {
     color: #95A5A6;
     padding-left: 2em;
+}
+
+.fa {
+    color: #E74C3C;
 }
