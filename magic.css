@@ -123,12 +123,12 @@ body {
 }
 
 .footer {
-    margin: 1em 3em;
+    margin: 1em 0em;
 }
 
 .footer-line {
     color: #95A5A6;
-    padding-left: 2em;
+    padding-left: 0.5em;
 }
 
 .fa {
