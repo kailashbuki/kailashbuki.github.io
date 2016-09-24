@@ -134,3 +134,8 @@ body {
 .fa {
     color: #C0392B;
 }
+
+#email-pic {
+    height: 25px;
+    margin-left: -5px !important
+}
