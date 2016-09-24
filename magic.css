@@ -86,12 +86,12 @@ body {
 }
 
 .pubs .title {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 .pubs .authors, .author {
-    padding-left: 5px;
-    color: #7F8C8D;
+    /*padding-left: 5px;*/
+    /*color: #7F8C8D;*/
 }
 
 .conf {
