@@ -139,3 +139,7 @@ body {
     height: 25px;
     margin-left: -5px !important
 }
+
+.hlight {
+    font-weight: bold;
+}
