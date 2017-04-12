@@ -1,0 +1,153 @@
+/* copied from tufte.css */
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+             src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: normal; }
+
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+             src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: italic; }
+
+@font-face { font-family: "et-book";
+             src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+             src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+             font-weight: bold;
+             font-style: normal; }
+
+@font-face { font-family: "et-book-roman-old-style";
+             src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+             src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+             font-weight: normal;
+             font-style: normal; }
+
+body {
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-size: 15px;
+}
+
+a {
+    color: #F44336;
+}
+
+a:hover, a:focus {
+    color: #D50000;
+}
+
+.nav {
+    margin-left: -12px;
+}
+
+.nav-item {
+    font-family: 'GillSans', 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.nav-link {
+    border: none !important;
+    color: #464a4c;
+}
+
+.nav-link.active {
+    border-color: none !important;
+    color: #F44336 !important;
+}
+
+.header, .nav-tabs {
+    border-bottom: none;
+}
+
+.pub li {
+    color: #939393;
+    padding-bottom: 15px;
+}
+
+.pub .title {
+    /*font-weight: bold;*/
+}
+
+.pub .conf {
+    font-style: italic;
+}
+
+.pub .authors {
+    font-size: 14px;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: #F44336;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* shamelessly copied from https://codepen.io/maxds/pen/DcveB */
+blockquote{
+    display:block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+
+    /*Font*/
+    font-family: Georgia, serif;
+    /*font-size: 16px;
+    line-height: 1.2;*/
+    font-size: 13px;
+    line-height: 1;
+    color: #666;
+    text-align: justify;
+
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+
+blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+}
+
+blockquote a{
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+blockquote a:hover{
+    color: #666;
+}
+
+blockquote em{
+    font-style: italic;
+}
