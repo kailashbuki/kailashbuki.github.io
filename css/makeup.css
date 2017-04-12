@@ -151,3 +151,7 @@ blockquote a:hover{
 blockquote em{
     font-style: italic;
 }
+
+#achievement a {
+    color: inherit;
+}
