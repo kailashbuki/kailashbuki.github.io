@@ -152,6 +152,28 @@ blockquote em{
     font-style: italic;
 }
 
-#achievement a {
+#misc a {
     color: inherit;
+}
+
+.timeline h4 {
+    font-size: 0.9em;
+    margin: 0em;
+    line-height: 1.5;
+}
+
+.timeline .desc {
+    width: 74%;
+}
+
+.timeline .bullet.orange {
+    border: 2px solid darkorange;
+}
+
+.timeline .bullet.pink {
+    border: 2px solid darkpink;
+}
+
+.timeline .bullet.green {
+    border: 2px solid green;
 }
