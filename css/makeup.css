@@ -71,11 +71,11 @@ a:hover, a:focus {
     /*font-style: italic;*/
 }
 
-.pub .conf {
+.conf {
     font-style: italic;
 }
 
-.pub .authors {
+.authors {
     font-size: 14px;
 }
 
