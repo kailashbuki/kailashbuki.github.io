@@ -24,8 +24,7 @@
              font-style: normal; }
 
 body {
-    /*font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
-    font-family: Lato-Regular;
+    font-family: Lato-Regular, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
     font-size: 14px;
 }
 
