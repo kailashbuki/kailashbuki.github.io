@@ -24,8 +24,9 @@
              font-style: normal; }
 
 body {
-    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    font-size: 15px;
+    /*font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
+    font-family: Lato-Regular;
+    font-size: 14px;
 }
 
 a {
@@ -182,3 +183,4 @@ blockquote em{
 .timeline .bullet.gold {
     border: 2px solid gold;
 }
+
