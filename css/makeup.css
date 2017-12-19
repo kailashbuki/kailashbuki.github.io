@@ -65,8 +65,9 @@ a:hover, a:focus {
     padding-bottom: 20px;
 }
 
-.pub .title {
+.desc .title {
     /*font-weight: bold;*/
+    font-style: italic;
 }
 
 .pub .conf {
@@ -176,4 +177,8 @@ blockquote em{
 
 .timeline .bullet.green {
     border: 2px solid green;
+}
+
+.timeline .bullet.gold {
+    border: 2px solid gold;
 }
