@@ -184,7 +184,7 @@ blockquote em{
 }
 
 .corrigendum-link {
-    font-weight: bold;
+    font-variant-caps: small-caps;
     font-size: 0.9em;
 }
 
