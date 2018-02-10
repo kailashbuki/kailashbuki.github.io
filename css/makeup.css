@@ -211,3 +211,9 @@ blockquote em{
 .corrigendum .content {
     /*font-style: italic;*/
 }
+
+#pp {
+    width: 200px;
+    height: 200px;
+}
+}
