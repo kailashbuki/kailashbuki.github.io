@@ -86,8 +86,22 @@
                             <div class="bullet gold"></div>
                             <div class="time">2018</div>
                             <div class="desc">
-                                <h3><a href="manuscript/cute.pdf"><span class="title">Causal Inference on Event Sequences</span></a></h3><h4>
+                                <h3><a href="manuscript/cute.pdf"><span class="title">Causal Inference on Event Sequences</span></a>, <a href="#" class="corrigendum-link" id="cute">Corrigendum</a></h3><h4>
                                 In: <span class="conf">Proceedings of the SIAM International Conference on Data Mining (SDM'18)</span>, SIAM, 2018.<!-- (23.2% acceptance rate, to appear)--></h4>
+                                <div class="corrigendum" id="cute-corrigendum" style="display:none;">
+                                    <div class="row">
+                                        <span class="header">Where: </span><span class="content">Section 2.5.1: Conditional Compression (Paragraph starting with "At a first glance")</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="header">Problem: </span><span class="content">Numerical analysis is used to identify the value of \(t_1\) that maximises the prediction for outcomes \(x_t=0\) and \(x_t=1\).
+                                    </div>
+                                    <div class="row">
+                                        <span class="header">Improvement:</span>
+                                        <span class="content">We can use constrained optimisation (with lagrange multipliers) instead. For outcome \(x_t=1\), we have<br/><br/>
+                                        maximise:    \( \frac{(t_1+1)^{(t_1+1)}(t-1-t_1)^{(t-1-t_1)}}{(t_1+1)^{(t_1+1)}(t-1-t_1)^{(t-1-t_1)}+t_1^{t_1}(t-t_1)^{(t-t_1)}} \) subject to: \( 0 \leq t_1 \leq t-1 \)<br/><br/>
+                                        The objective function attains its maximum value at at \(t_1=t-1\). Likewise, we can do it for outcome \(x_t=0\).
+                                    </div>
+                                </div>
                             </div>
                         </li>
                         <li>
