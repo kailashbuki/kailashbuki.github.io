@@ -223,4 +223,9 @@ blockquote em{
     width: 170px;
     /*height: 208px;*/
 }
+
+#info {
+    background-image: url('../img/pp.jpg');
+}
+
 }
