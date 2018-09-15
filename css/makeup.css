@@ -74,14 +74,21 @@ a:hover, a:focus {
     /*font-style: italic;*/
 }
 
+.timeline h5 {
+    margin: 0em;
+}
+
 .authors {
-    font-size: 14px;
+    font-size: 12px;
+    color: #808080;
+    display: none;
 }
 
 .heading {
     text-transform: uppercase;
     color: #F44336;
     font-weight: 600;
+    font-size: 12px;
     margin-bottom: 25px;
 }
 

@@ -36,10 +36,12 @@
                 <ul class="nav pull-left nav-tabs" role="tablist">
                     <li class="nav-item"><a class="nav-link active" href="#about" data-toggle="tab" role="tab">About <span class="sr-only">(current)</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#research" data-toggle="tab" role="tab">Research</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#education" data-toggle="tab" role="tab">Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#misc" data-toggle="tab" role="tab">Misc</a></li>
-                    <!--<li class="nav-item"><a class="nav-link" href="#blog" data-toggle="tab"
-                        role="tab">Blog</a></li>-->
+                    <!-- <li class="nav-item"><a class="nav-link" href="#education" data-toggle="tab" role="tab">Education</a></li> -->
+                    <!--<li class="nav-item"><a class="nav-link" href="#misc" data-toggle="tab"
+                        role="tab">Misc</a></li>-->
+                    <li class="nav-item"><a class="nav-link" href="#blog" data-toggle="tab"
+                        role="tab">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="tab" role="tab">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,10 +50,8 @@
             <div class="tab-pane active" id="about" role="tabpanel">
                 <h6 class="heading">Kailash Budhathoki</h6>
                 <div class="row">
-                    <div class="col">
-                        <img src="img/pp.png" id="pp" alt="kb">
-                    </div>
                     <div class="col-8">
+                        <!-- <img src="img/pp.png" id="pp" alt="kb"> -->
                         <ul class="list-unstyled">
                             <li><span style="font-weight:bold">PhD Student</span></li>
                             <li><a href="http://eda.mmci.uni-saarland.de/" title="Exploratory Data Analysis Group">Exploratory Data Analysis Group</a></li>
@@ -60,23 +60,16 @@
                             <!-- <li>&nbsp;</li> -->
                             <li><a href="https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/" title="Department 5: Databases and Information Systems">Department 5: Databases and Information Systems</a></li>
                             <li><a href="http://www.mpi-inf.mpg.de/home/" title="Max Planck Institute for Informatics">Max Planck Institute for Informatics</a></li>
-                            <br/>
-                            <!--<li><a href="http://sic.saarland/" title="Saarland Informatics Campus">Saarland
-                                Informatics Campus</a></li>-->
-                            <li><a href="http://www.mpi-inf.mpg.de/location/campus-map.html" title="Campus map including the building of the institute">Campus E1 7</a>, Room 3.02</li>
-                            <li>66123 <a href="http://www.saarbruecken.de/" title="Homepage of Saarbr&uuml;cken">Saarbr&uuml;cken</a>
-                            , <a href="http://www.deutschland.de/" title="Germany Portal">Germany</a></li>
-                            <li><span>Email:</span><img id="email-pic" width="170" src="img/email.png"/></li>
-                            <li>PGP: <a href="resources/kbudhathpgp.asc" download>37CC78FA</a></li>
-                            <li>Phone: +49 681 302 70 788</li>
                         </ul>
                     </div>
+                    <!-- <div class="col-8">
+                    </div> -->
                 </div>
                 <!-- <blockquote>
                     <p class="mb-0">Where is the wisdom we have lost in knowledge? Where is the knowledge we have lost in information?</p>
                 </blockquote>
                 <p>Posed by Nobel laureate T.S. Eliot over a century ago, the computational process of answering the second of those two questions, arguably, summarises what data mining is all about. And my research can be consolidated under the umbrella of data mining.</p> -->
-                <p>I am interested in Algorithmic Data Analysis where we are concerned with developing theory and algorithms for extracting interesting structures from data. My past and current research mainly concerns with discovering <em>assocations</em>, <em>correlations</em>, and <em>causation</em> from data by means of (algorithmic) information theory. I also closely follow the developments in design and visualisation.</p>
+                <p>Statistics, Causal Inference, Data Mining</p>
             </div>
             <div class="tab-pane" id="research" role="tabpanel">
                 <h6 class="heading">Publications</h6>
@@ -86,8 +79,19 @@
                             <div class="bullet gold"></div>
                             <div class="time">2018</div>
                             <div class="desc">
-                                <h3><a href="manuscript/cute.pdf"><span class="title">Causal Inference on Event Sequences</span></a>, <a href="#" class="corrigendum-link" id="cute">Corrigendum</a></h3><h4>
+                                <h3><a href="manuscript/acid.pdf"><span class="title">Accurate Causal Inference on
+                                            Discrete Data</span></a></h3>
+                                <h4>In: <span class="conf">Proceedings of the IEEE International Conference on Data
+                                        Mining (ICDM'18)</span>, IEEE, 2018.</h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
+                                <br/>
+                                <h3><a href="manuscript/football-agony.pdf"><span class="title">Ranking the Teams in European Football Leagues With Agony</span></a></h3>
+                                <h4>In: <span class="conf">Proceedings of the 5th Workshop on Machine Learning and Data Mining for Sports Analytics</span>, ECML/PKDD, 2018.<!-- (23.2% acceptance rate, to appear)--></h4>
+                                <h5><span class="authors">Stefan Neumann, Julian Ritter and Kailash Budhathoki</span></h5>
+                                <br/>
+                                <h3><a href="manuscript/cute.pdf"><span class="title">Causal Inference on Event Sequences</span></a></h3><h4>
                                 In: <span class="conf">Proceedings of the SIAM International Conference on Data Mining (SDM'18)</span>, SIAM, 2018.<!-- (23.2% acceptance rate, to appear)--></h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                                 <div class="corrigendum" id="cute-corrigendum" style="display:none;">
                                     <div class="row">
                                         <span class="header">Where: </span><span class="content">Section 2.5.1: Conditional Compression (Paragraph starting with "At a first glance")</span>
@@ -110,12 +114,15 @@
                             <div class="desc">
                                 <h3><a href="http://rdcu.be/yK4I"><span class="title">ORIGO: Causal Inference by Compression</span></a></h3>
                                 <h4><span class="conf">Knowledge and Information Systems</span>, Springer, 2017.<!-- (IF 2.004)--></h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                                 <br/>
                                 <h3><a href="manuscript/cisc.pdf"><span class="title">MDL for Causal Inference on Discrete Data</span></a></h3>
                                 <h4>In: <span class="conf">Proceedings of the IEEE International Conference on Data Mining (ICDM'17)</span>, IEEE, 2017.<!-- (short paper, 19.9% acceptance rate)--></h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                                 <br/>
                                 <h3><a href="manuscript/cbc.pdf"><span class="title">Correlation by Compression</span></a></h3><h4>
                                 In: <span class="conf">Proceedings of the SIAM International Conference on Data Mining (SDM'17)</span>, SIAM, 2017.<!-- (26% acceptance rate)--></h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                             </div>
                         </li>
                         <li>
@@ -124,6 +131,7 @@
                             <div class="desc">
                                 <h3><a href="manuscript/origo.pdf"><span class="title">Casual Inference by Compression</span></a>, <a href="#" class="corrigendum-link" id="origo">Corrigendum</a></h3>
                                 <h4>In: <span class="conf">Proceedings of the IEEE International Conference on Data Mining (ICDM'16)</span>, IEEE, 2016.<!-- (regular paper, 8.5% acceptance rate; overall 19.6%)(invited for KAIS journal special issue, "Best of ICDM'16")--></h4>
+                                <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                                 <div class="corrigendum" id="origo-corrigendum" style="display:none;">
                                     <div class="row">
                                         <span class="header">Where: </span><span class="content">Section III: Causal Inference by Algorithmic Information Theory</span>
@@ -145,6 +153,7 @@
                             <div class="desc">
                             <h3><a href="manuscript/diffnorm.pdf"><span class="title">The Difference and The Norm &mdash; Characterising Similarities and Differences between Databases</span></a></h3>
                             <h4>In: <span class="conf">Proceedings of the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD)</span>, Springer, 2015. <!--(23.2% acceptance rate)--></h4>
+                            <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
                             </div>
                         </li>
                     </ul>
@@ -269,6 +278,17 @@
             <div class="tab-pane" id="blog" role="tabpanel">
                 <h6 class="heading">Blog Posts</h6>
                 <p>coming <em>very</em> soon ...</p>
+            </div>
+            <div class="tab-pane" id="contact" role="tabpanel">
+                <h6 class="heading">Contact</h6>
+                <ul class="list-unstyled">
+                    <li><a href="http://www.mpi-inf.mpg.de/location/campus-map.html" title="Campus map including the building of the institute">Campus E1 7</a>, Room 3.02</li>
+                    <li>66123 <a href="http://www.saarbruecken.de/" title="Homepage of Saarbr&uuml;cken">Saarbr&uuml;cken</a>
+                    , <a href="http://www.deutschland.de/" title="Germany Portal">Germany</a></li>
+                    <li><span>Email:</span><img id="email-pic" width="170" src="img/email.png"/></li>
+                    <li>PGP: <a href="resources/kbudhathpgp.asc" download>37CC78FA</a></li>
+                    <li>Phone: +49 681 302 70 788</li>
+                </ul>
             </div>
         </div>
 
