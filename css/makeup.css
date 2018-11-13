@@ -81,7 +81,7 @@ a:hover, a:focus {
 .authors {
     font-size: 12px;
     color: #808080;
-    display: none;
+    /*display: none;*/
 }
 
 .heading {
