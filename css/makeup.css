@@ -24,7 +24,7 @@
              font-style: normal; }*/
 
 body {
-    font-family: Lato, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
     font-size: 14px;
 }
 
@@ -41,7 +41,7 @@ a:hover, a:focus {
 }
 
 .nav-item {
-    font-family: 'GillSans', 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    /*font-family: 'GillSans', 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;*/
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -81,13 +81,13 @@ a:hover, a:focus {
 .authors {
     font-size: 12px;
     color: #808080;
-    /*display: none;*/
+    display: none;
 }
 
 .heading {
     text-transform: uppercase;
     color: #F44336;
-    font-weight: 600;
+    /*font-weight: 600;*/
     font-size: 12px;
     margin-bottom: 25px;
 }
@@ -228,4 +228,7 @@ blockquote em{
     background-image: url('../img/pp.jpg');
 }
 
+#short-bio {
+    padding-left: 1em;
 }
+
