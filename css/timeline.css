@@ -46,12 +46,12 @@
 }
 
 .timeline .time {
-    width: 10%;
+    width: 20%;
     font-size: 0.9em;
 }
 
 .timeline .desc {
-    width: 84%;
+    width: 74%;
 }
 
 .timeline h3 {
