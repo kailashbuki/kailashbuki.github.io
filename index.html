@@ -40,8 +40,8 @@
                     <li class="nav-item"><a class="nav-link" href="#education" data-toggle="tab" role="tab">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#activities" data-toggle="tab"
                         role="tab">Activities</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#blog" data-toggle="tab"
-                        role="tab">Blog</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#blog" data-toggle="tab"
+                        role="tab">Blog</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="#contact" data-toggle="tab" role="tab">Contact</a></li>
                 </ul>
             </nav>
@@ -97,9 +97,20 @@
                             <div class="bullet gold"></div>
                             <div class="time">2018</div>
                             <div class="desc">
-                                <h3><a href="manuscript/dice-nipscl-2018.pdf"><span class="title">Rule Discovery for Exploratory Causal Reasoning</span></a></h3>
+                                <h3><a href="manuscript/dice-nipscl-2018.pdf"><span class="title">Rule Discovery for Exploratory Causal Reasoning</span></a>, <a href="#" class="corrigendum-link" id="dice">Corrigendum</a></h3>
                                 <h4>In: <span class="conf">Workshop on Causal Learning</span>, NeurIPS, 2018.</h4>
                                 <h5><span class="authors">Kailash Budhathoki, Mario Boley and Jilles Vreeken</span></h5>
+                                <div class="corrigendum" id="dice-corrigendum" style="display:none;">
+                                    <div class="row">
+                                        <span class="header">Where: </span><span class="content">Proof of Theorem 1.</span>
+                                    </div>
+                                    <div class="row">
+                                        <span class="header">Problem: </span><span class="content">Proof is incorrect using the current definition of unbiased intervention.</span>.
+                                    </div>
+                                    <div class="row">
+                                        <span class="header">Correction: </span><span class="content">The manuscript with the updated proof will be out soon.</span>
+                                    </div>
+                                </div>
                                 <br/>
                                 <h3><a href="manuscript/acid.pdf"><span class="title">Accurate Causal Inference on
                                             Discrete Data</span></a></h3>
@@ -114,20 +125,6 @@
                                 <h3><a href="manuscript/cute.pdf"><span class="title">Causal Inference on Event Sequences</span></a></h3><h4>
                                 In: <span class="conf">Proceedings of the SIAM International Conference on Data Mining (SDM'18)</span>, SIAM, 2018.<!-- (23.2% acceptance rate, to appear)--></h4>
                                 <h5><span class="authors">Kailash Budhathoki and Jilles Vreeken</span></h5>
-                                <div class="corrigendum" id="cute-corrigendum" style="display:none;">
-                                    <div class="row">
-                                        <span class="header">Where: </span><span class="content">Section 2.5.1: Conditional Compression (Paragraph starting with "At a first glance")</span>
-                                    </div>
-                                    <div class="row">
-                                        <span class="header">Problem: </span><span class="content">Numerical analysis is used to identify the value of \(t_1\) that maximises the prediction for outcomes \(x_t=0\) and \(x_t=1\).
-                                    </div>
-                                    <div class="row">
-                                        <span class="header">Improvement:</span>
-                                        <span class="content">We can use constrained optimisation (with lagrange multipliers) instead. For outcome \(x_t=1\), we have<br/><br/>
-                                        maximise:    \( \frac{(t_1+1)^{(t_1+1)}(t-1-t_1)^{(t-1-t_1)}}{(t_1+1)^{(t_1+1)}(t-1-t_1)^{(t-1-t_1)}+t_1^{t_1}(t-t_1)^{(t-t_1)}} \) subject to: \( 0 \leq t_1 \leq t-1 \)<br/><br/>
-                                        The objective function attains its maximum value at at \(t_1=t-1\). Likewise, we can do it for outcome \(x_t=0\).
-                                    </div>
-                                </div>
                             </div>
                         </li>
                         <li>
@@ -248,6 +245,13 @@
                 <h6 class="heading">Journal Reviewer</h6>
                 <div class="timeline">
                     <ul>
+                        <li>
+                            <div class="bullet pink"></div>
+                            <div class="time">2019</div>
+                            <div class="desc">
+                                <h3><a href="https://link.springer.com/journal/10618">Data Mining and Knowledge Discovery</a></h3>
+                            </div>
+                        </li>
                         <li>
                             <div class="bullet pink"></div>
                             <div class="time">2016</div>
