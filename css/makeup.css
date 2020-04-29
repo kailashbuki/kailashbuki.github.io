@@ -193,6 +193,7 @@ blockquote em{
 .corrigendum-link {
     font-variant-caps: small-caps;
     font-size: 0.9em;
+    color: blue;
 }
 
 .corrigendum .where, .corrigendum .error, .corrigendum .correction {
