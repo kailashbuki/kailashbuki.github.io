@@ -1,0 +1,239 @@
+body {
+    font-family: "Amazon Ember Light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+    /* font-size: 14px; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ol {
+    counter-reset: item;
+    margin-left: 0;
+    padding-left: 0;
+} */
+
+li {
+    /* list-style-type: circle; */
+    /* display: block; */
+    margin-bottom: .5em;
+    /* margin-left: 2em; */
+}
+
+a {
+    color: blue !important; 
+}
+
+/* li::before {
+    display: inline-block;
+    content: "[" counter(item) "]";
+    counter-increment: item;
+    width: 2em;
+    margin-left: -2em;
+} */
+
+a {
+    color: #F44336;
+}
+
+a:hover, a:focus {
+    color: #D50000;
+}
+
+.nav {
+    margin-left: -12px;
+}
+
+.nav-item {
+    /*font-family: 'GillSans', 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;*/
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.nav-link {
+    border: none !important;
+    color: #464a4c;
+}
+
+.nav-link.active {
+    border-color: none !important;
+    color: #F44336 !important;
+}
+
+.header, .nav-tabs {
+    border-bottom: none;
+}
+
+.pub li {
+    color: #939393;
+    padding-bottom: 20px;
+}
+
+.desc .title {
+    /*font-weight: bold;*/
+    /*font-style: italic;*/
+}
+
+.conf {
+    /*font-style: italic;*/
+}
+
+.timeline h5 {
+    margin: 0em;
+}
+
+.authors {
+    font-size: 12px;
+    color: #808080;
+    display: none;
+}
+
+.heading {
+    text-transform: uppercase;
+    color: #F44336;
+    /*font-weight: 600;*/
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* shamelessly copied from https://codepen.io/maxds/pen/DcveB */
+blockquote{
+    display:block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+
+    /*Font*/
+    font-family: Georgia, serif;
+    /*font-size: 16px;
+    line-height: 1.2;*/
+    font-size: 13px;
+    line-height: 1;
+    color: #666;
+    text-align: justify;
+
+    /*Borders - (Optional)*/
+    border-left: 15px solid #c76c0c;
+    border-right: 2px solid #c76c0c;
+
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before{
+    content: "\201C"; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-family: Georgia, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top:5px;
+}
+
+blockquote::after{
+    /*Reset to make sure*/
+    content: "";
+}
+
+blockquote a{
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+blockquote a:hover{
+    color: #666;
+}
+
+blockquote em{
+    font-style: italic;
+}
+
+#misc a, #education a {
+    color: inherit;
+}
+
+.timeline h4 {
+    font-size: 0.9em;
+    margin: 0em;
+    line-height: 1.5;
+}
+
+.timeline .desc {
+    width: 74%;
+}
+
+.timeline .bullet.orange {
+    border: 2px solid darkorange;
+}
+
+.timeline .bullet.pink {
+    border: 2px solid darkpink;
+}
+
+.timeline .bullet.green {
+    border: 2px solid green;
+}
+
+.timeline .bullet.gold {
+    border: 2px solid gold;
+}
+
+.corrigendum-link {
+    font-variant-caps: small-caps;
+    font-size: 0.9em;
+    color: blue;
+}
+
+.corrigendum .where, .corrigendum .error, .corrigendum .correction {
+    text-transform: capitalize;
+}
+
+.corrigendum .row {
+    margin-top: 5px;
+    display: block;
+    font-size: 0.9em;
+}
+
+.corrigendum {
+    background: #eeeeee;
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+}
+
+.corrigendum .header {
+    font-variant-caps: small-caps;
+}
+
+.corrigendum .content {
+    /*font-style: italic;*/
+}
+
+#pp {
+    width: 170px;
+    /*height: 208px;*/
+}
+
+#info {
+    background-image: url('../img/pp.jpg');
+}
+
+#short-bio {
+    padding-left: 1em;
+}
+
