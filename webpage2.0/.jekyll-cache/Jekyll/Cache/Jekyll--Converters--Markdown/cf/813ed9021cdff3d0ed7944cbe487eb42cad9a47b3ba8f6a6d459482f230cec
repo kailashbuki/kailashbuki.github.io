@@ -1,0 +1,5 @@
+I"<p>Given a causal graph \(\mathcal{G}\)<label for="sn-causalgraph" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-causalgraph" class="margin-toggle" /><span class="sidenote">A causal graph is a directed acyclic graph that represents data-generating process that operates sequentially along its arrows.</span> of variables \(X_1, \dotsc, X_n\),
+a structural equation model (SEM) represents the data-generating process of each node \(X_j\) as a function \(f_j\) of its parents \(\mathrm{PA}_j\) in \(\mathcal{G}\), and <strong>unobserved</strong> noise \(N_j\), i.e.
+\[X_j := f_j(\textrm{PA}_j, N_j),\]
+where noise variables $N_1, \dotsc, N_n$ are statistically jointly independent. <span class="marginnote">A toy causal graph alongside its SEM. <img src="/images/sem.png" alt="Toy SCM" /></span> Each structural assignment represents the <i>causal mechanism</i> that generates child $X_j$ from its parents $\mathrm{PA}_j$. Here, we will explore two questions regarding unobserved noise variables:</p>
+:ET

@@ -1,0 +1,114 @@
+I"�;<p>Given a causal graph \(\mathcal{G}\)<label for="sn-causalgraph" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-causalgraph" class="margin-toggle" /><span class="sidenote">A causal graph is a directed acyclic graph that represents data-generating process that operates sequentially along its arrows.</span> of variables \(X_1, \dotsc, X_n\),
+a structural equation model (SEM) represents the data-generating process of each node \(X_j\) as a function \(f_j\) of its parents \(\mathrm{PA}_j\) in \(\mathcal{G}\), and <strong>unobserved</strong> noise \(N_j\), i.e.
+\[X_j := f_j(\textrm{PA}_j, N_j),\]
+where noise variables $N_1, \dotsc, N_n$ are statistically jointly independent. <span class="marginnote">A toy causal graph alongside its SEM. <img src="/images/sem.png" alt="Toy SCM" /></span> Each structural assignment represents the <i>causal mechanism</i> that generates child $X_j$ from its parents $\mathrm{PA}_j$. Here, we will explore two questions regarding unobserved noise variables:</p>
+
+<h3>What does a noise variable represent in reality?</h3>
+
+<p>The formal definition suggests that a noise variable $N_j$ in SEM represents factors that <em>only</em> influence the corresponding observed variable $X_j$—but not other noises or observed variables.  Moreover, as noise $N_j$ is unobserved, it also represents “phenomenon” due to which $X_j$ cannot be explained alone—deterministically—by the observed values of its parents $\textrm{pa}_j$. One example of such phenomenon is <a href="https://www.physics.umd.edu/courses/Phys276/Hill/Information/Notes/ErrorAnalysis.html">random error</a> that is always present in a measurement. It could also be other unmeasurable factors<label for="sn-pearl-noise" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-pearl-noise" class="margin-toggle" /><span class="sidenote">Pearl <a class="citation" href="#pearl:2012:sem">(Pearl, 2012)</a> writes, “they represent observed or unobserved background factors that the modeler decides to keep unexplained—that is, factors that influence but are not influenced by the other variables (called “endogenous”) in the model … The[y] <del>former</del> are shaped by physical reality (e.g., genetic factors, socioeconomic conditions)<del>, not by analysis</del>; they are treated as any other variable, though we often cannot measure their values precisely and must resign ourselves to merely acknowledging their existence and assessing qualitatively how they relate to other variables in the system.”</span> (e.g. mood, beauty, genetic factors) that influence $X_j$.</p>
+
+<!-- <div id="quote" class="epigraph">
+    <blockquote>
+        <p>
+            [Those] variables are called “exogenous”; they represent observed or unobserved
+            background factors that the modeler decides to keep unexplained—that is, factors that influence but are not influenced by the other variables (called “endogenous”) in the model.
+            Unobserved exogenous variables in structural equations, sometimes called “disturbances” or
+            “errors,” differ fundamentally from residual terms in regression equations. The latter are artifacts of analysis, which, by definition, are uncorrelated
+            with the regressors. The former are shaped by physical reality (e.g., genetic factors, socioeconomic conditions), not by analysis; they are treated as any other variable, though we often
+            cannot measure their values precisely and must resign ourselves to merely acknowledging
+            their existence and assessing qualitatively how they relate to other variables in the system
+        </p>
+    </blockquote>
+</div> -->
+
+<h3>Can we identify the noise variable from data?</h3>
+
+<p>In practice, the underlying SEM is seldom known. Instead, what we often have is a sample drawn from the joint distribution $P_{X_1, \dotsc, X_n}$. We then have to learn the SEM from the sample. This boils down to learning functions $f_j$ and unobserved noises $N_j$.</p>
+
+<p>Fortunately, learning the underlying functional relationship between variables is a well-studied problem in machine learning and statistics <a class="citation" href="#shwartz:2014:ml-theory-book">(Shalev-Shwartz &amp; Ben-David, 2014)</a>. Learning the unobserved noise, however, is a non-trivial learning problem.
+<!-- The noise variables $N_1, \dotsc, N_n$, however, are unobserved---by definition.  -->
+<!-- Is it then possible to recover them from a sample drawn from the joint distribution $P_{X_1, \dotsc, X_n}$ of observed variables?  -->
+In particular, for generic functions and noises, it is a difficult task<label for="sn-learn-noise" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-learn-noise" class="margin-toggle" /><span class="sidenote">The difficulty in learning unobserved noises in SEM from data for generic choices of functions and noises is also explained well in <a href="#schölkopf:2019:causality-ml">Schölkopf (2019)</a><span style="display:none"><a class="citation" href="#schölkopf:2019:causality-ml">(Schölkopf, 2019)</a></span>, and the general idea is briefly mentioned in <a href="#peters:2017:book">Peters et al. (Chapter 2, 2017)</a><span style="display:none"><a class="citation" href="#peters:2017:book">(Peters et al., 2017)</a></span> when drawing the connection between SEM and the principle of independent mechanism.</span>.</p>
+
+<p>To see this, consider the bivariate causal graph $X \rightarrow Y$ induced by the SEM $Y := f(X, N)$,
+where $N$ is statistically independent of $X$, i.e. $N \mathrel{\unicode{x2AEB}} X$.
+<!-- Can we then recover $N$ from a sample drawn from the joint distribution $P_{X, Y}$ 
+such that $N \mathrel{\unicode{x2AEB}} X$?  -->
+<!-- , i.e. $N$s that can be estimated from $P_{X, Y}$ that satisfy $N \mathrel{\unicode{x2AEB}} X$. -->
+Suppose that noise $N$ attains values in the finite set $\mathcal{N} := \{1, \dotsc, \xi \}$.
+For each value $n \in \mathcal{N}$ that $N$ takes, the assignment $Y := f(X, N)$ reduces to the
+deterministic causal mechanism $Y := f(X, n)$. For a non-smooth function, for instance, $N$ may randomly select a function $f_n(X)$ for each value of $N$ from the set $\mathcal{F} := \{f(X, n) =: f_n(X) \mid n \in \mathcal{N}\}$.
+<!-- that converts input $X$ to output $Y$ (for a non-smooth function). This shows that noise can randomly select the causal mechanism of $Y$.  -->
+Learning such SCM (with $\xi := |\mathcal{N}|$ functions) from finite data is difficult, specially as noise $N$ is <i>unobserved</i>.</p>
+
+<!-- Consider Bernoulli distributed random variables $X$ and $Y$, each with the probability of success $p=0.5$.  -->
+<!-- , i.e. domains of $X$ and $Y$ are respectively $\mathcal{X}, \mathcal{Y} \in \\{0, 1\\}$.  -->
+<!-- Suppose that their underlying causal graph $X \rightarrow Y$ is induced by the SCM $Y := f(X, N)$,  -->
+<!-- where unobserved noise $N$ is also binary, i.e. $\mathcal{N} \in \\{0, 1\\}$. Depending on the value of $N$ -->
+<!-- \\[
+    Y := f_0(X)\\
+    Y := f_1(X)
+ \\]
+
+
+$f$ is chosen randomly from $\mathcal{F} := \\{ f_\oplus, f_I, f_{\neg} \\}$ is a binary XOR operator. Assume that $X$ and $N$ are Bernoulli distributed. Then $Y$ is also uniformly distributed. But $Y$ is independent of $X$. We cannot then infer the causal direction from data. -->
+
+<p>This problem of learning SEMs from data for a given causal graph is referred to as “SEM Identification Problem” in causal inference literature <a class="citation" href="#spirtes:1998:linear-sem-identification">(Spirtes et al., 1998)</a>. MOSTLY for cases when there can be unobserved confounding. Although SEM identification is difficult for a generic class of SEMs, a more general identification result is possible with additional assumptions that restrict the class of SEMs. <a href="#tian:2009:linear-sem-identification">Tian (2009)</a><span style="display:none"><a class="citation" href="#tian:2009:linear-sem-identification">(Tian, 2009)</a></span>, for instance, studied identifiability criteria for a class of linear SEMs (linear function and additive noise), also known as linear additive noise models (ANMs). For ANMs, a more general (but <strong>weaker</strong>) identification result is possible without restricting the class of functions.</p>
+
+<p>Suppose that the causal graph $\mathcal{G}$ is induced by ANM. That is, the structural assignment of each node $X_j$ in $\mathcal{G}$ consists of an <em>additive</em> noise:
+\[
+    X_j := f_j(\mathrm{PA}_j) + N_j.
+\]</p>
+
+<p>Then, from a sample drawn from the joint distribution $P_{X_j, \mathrm{PA}_j}$, we can estimate $f_j$ using regression<label for="sn-regression" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-regression" class="margin-toggle" /><span class="sidenote">
+A <strong>regression function</strong> $r:\mathcal{X} \rightarrow \mathcal{Y}$ (where $\mathcal{Y}$ is often $\mathbb{R}$) gives us the expected value of the response variable $Y$ given an instance $x$ of the covariate $X$, i.e. $r(x) = \mathbb{E}[Y \mid X=x]$. It may belong to some finite (e.g. set of straight lines) or infinite family $\mathcal{R} \ni r$. A regression model from any family $\mathcal{R}$ can always be written as 
+\[
+    Y = r(X) + \epsilon,
+\]
+where $\mathbb{E}[\epsilon] = 0$. This is because we can define $\epsilon = Y - r(X)$ s.t. $Y = Y + r(X) - r(X)$ $= r(X) + \epsilon$, and mean of the residual $\epsilon$ is 
+<span style="display: inline-block; visibility:hidden">space </span>
+\(\begin{align}
+    \mathbb{E}[\epsilon] &amp;= \mathbb{E}[\mathbb{E}[\epsilon \mid X]]\\
+                         &amp;= \mathbb{E}[\mathbb{E}[ Y - r(X) \mid X]]\\ 
+                         &amp;= \mathbb{E}[\mathbb{E}[ Y  \mid X] - \mathbb{E}[r(X) \mid X]]\\
+                         &amp;= \mathbb{E}[r(X) - r(X)]\\
+                         &amp;= 0
+    \end{align}\)
+<!-- <span style="display: inline-block; visibility:hidden">space</span> -->
+Above, we observe that $\mathbb{E}[\epsilon \mid X] = 0$. Thus, we have $\mathbb{E}[\epsilon \mid X] = \mathbb{E}[\epsilon]$. That is, residual $\epsilon$ and input $X$ are <strong>mean independent</strong>. Note that if $\epsilon$ has a non-zero mean then we can incorporate that into $r(X)$ as an additive constant.
+</span>
+ $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$, and the residual $\epsilon_Y = Y - \hat{f}_j(\textrm{PA}_j)$ estimates the (possibly mean-shifted) noise variable $N_j$ that is <strong>uncorrelated</strong> to $\textrm{PA}_j$, i.e. $\mathit{Cov}(N_j, X)=0$.</p>
+
+<!-- For clarity of notation, we show the result for the bivariate causal graph. The result, however, generalises for multivariate parents. 
+
+**Lemma.**
+Consider the bivariate causal graph $X \rightarrow Y$ induced by an ANM
+<p>
+$$ 
+    \begin{align}
+        X &:= N_X\\
+        Y &:= f(X) + N_Y,
+    \end{align}
+$$
+</p>
+where $N_Y \mathrel{\unicode{x2AEB}} N_X$ or equivalently $N_Y \mathrel{\unicode{x2AEB}} X$. From a sample drawn from the joint distribution $P_{X, Y}$, we can recover $f$ using an appropriate regression model $f(x) = \mathbb{E}[Y \mid X=x]$, and the residual $Y - \mathbb{E}[Y \mid X=x] =: N_Y$ gives us the unobserved noise variable that is **uncorrelated** to $X$, i.e. $\mathit{Cov}(N_Y, X)=0$. -->
+
+<!-- **Proof.** -->
+<!-- <p class="proof"> -->
+
+<p>Note that zero correlation is a weaker condition than statistical independence. The latter implies the former, but not the other way around. In special cases (e.g. multivariate Gaussian distribution), however, mean independence implies statistical independence (see <a href="https://en.wikipedia.org/wiki/Normally_distributed_and_uncorrelated_does_not_imply_independent">here</a>). Therefore for a linear regression with joint Gaussian distribution we can recover the noise up to statistical independence.</p>
+
+<p>We still have to learn the regression function from data. To this end, we optimise some “loss function”—that measures how well a function $f$ fits the data—over a class of functions $\mathcal{F}$. Although regression estimates of most loss functions (e.g. $\ell_1$, $\ell_2$) converge to the conditional mean asymptotically as the sample size approches infinity, for a finite sample size, some loss functions may achieve better approximation than the others depending on the distribution of noise. Whereas $\ell_1$-loss function gives optimal result for a Laplace distributed noise, $\ell_2$ loss provides optimal result for a Gaussian noise<label for="sn-ml-estimation" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-ml-estimation" class="margin-toggle" /><span class="sidenote">Note that $\ell_1$-loss minimisation yields the median for the parameter, whereas $\ell_1$-loss yields mean. Whereas the maximum likelihood estimates of the parameters of a Gaussian distribution can be computed from the sample mean, the maximum likelihood estimators of the parameters of a Laplacian distribution can be computed using sample median. Therefore, $\ell_2$ loss is appropriate for a Gaussian noise, whereas $\ell_1$ loss is suited for a Laplacian noise.</span>. If the distribution of the noise is unknown, it is hard to tell which loss function will yield optimal result. A promising approach then is to use a regression procedure that minimises dependence between residuals and regressors based on a non-parametric test of indpendence <a class="citation" href="#mooij:2009:dependence-minimisation-regression">(Mooij et al., 2009)</a>. The non-convexity of the resulting optimisation problem, however, makes it difficult to solve.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="pearl:2012:sem">Pearl, J. (2012). <i>The Causal Foundations of Structural Equation Modeling</i>. Guilford Press, New York.</span></li>
+<li><span id="shwartz:2014:ml-theory-book">Shalev-Shwartz, S., &amp; Ben-David, S. (2014). <i>Understanding Machine Learning: From Theory to Algorithms</i>. Cambridge University Press.</span></li>
+<li><span id="schölkopf:2019:causality-ml">Schölkopf, B. (2019). <i>Causality for Machine Learning</i>.</span></li>
+<li><span id="peters:2017:book">Peters, J., Janzing, D., &amp; Schölkopf, B. (2017). <i>Elements of Causal Inference - Foundations and Learning Algorithms</i>. The MIT Press.</span></li>
+<li><span id="spirtes:1998:linear-sem-identification">Spirtes, P., Richardson, T., Meek, C., Scheines, R., &amp; Glymour, C. (1998). Using Path Diagrams as a Structural Equation Modeling Tool. <i>Sociological Methods &amp; Research</i>, <i>27</i>(2), 182–225.</span></li>
+<li><span id="tian:2009:linear-sem-identification">Tian, J. (2009). Parameter Identification in a Class of Linear Structural Equation Models. <i>IJCAI 2009, Proceedings of the 21st International Joint Conference
+               on Artificial Intelligence, Pasadena, California, USA, July 11-17,
+               2009</i>, 1970–1975.</span></li>
+<li><span id="mooij:2009:dependence-minimisation-regression">Mooij, J. M., Janzing, D., Peters, J., &amp; Schölkopf, B. (2009). Regression by dependence minimization and its application to causal inference in additive noise models. <i>Proceedings of the 26th International Conference on Machine Learning</i>, 745–752.</span></li></ol>
+:ET

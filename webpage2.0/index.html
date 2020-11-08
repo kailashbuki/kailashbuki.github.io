@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<h1 id="tufte-css">{{ site.name }}</h1>
+<p class="subtitle">{{ site.description }}</p>
+
+<section>
+  <div class="posts">
+    <!-- <ul> -->
+      {% for post in site.posts %}
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      {% endfor %}
+    <!-- </ul> -->
+  </div>
+</section>

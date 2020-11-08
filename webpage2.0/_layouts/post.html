@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h3><a href="{{ site.baseurl }}../">&#8592; {{ site.shortname }}'s Home Page</a></h3>
+
+<h2>{{ page.title }}</h2>
+
+<div class="date">&mdash; {{ page.date | date: "%B %e, %Y" }}</div>
+
+<section> {{ content }} </section>
+
+
+{% include disqus.html %}
