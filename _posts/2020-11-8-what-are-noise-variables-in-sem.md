@@ -37,7 +37,7 @@ A **regression function** $r:\mathcal{X} \rightarrow \mathcal{Y}$ (where $\mathc
     Y = r(X) + \epsilon,
 \\]
 where $\mathbb{E}[\epsilon] = 0$. This is because we can define $\epsilon = Y - r(X)$ s.t. $Y = Y + r(X) - r(X)$ $= r(X) + \epsilon$, and mean of the residual $\epsilon$ is 
-<span style="display: inline-block; visibility:hidden">space </span>
+<span style="display: inline-block; visibility:hidden">space more </span>
 $$
     \begin{align}
     \mathbb{E}[\epsilon] &= \mathbb{E}[\mathbb{E}[\epsilon \mid X]]\\
@@ -47,7 +47,7 @@ $$
                          &= 0
     \end{align}
 $$
-<!-- <span style="display: inline-block; visibility:hidden">space</span> -->
+<!-- <span style="display: inline-block; visibility:hidden">more space</span> -->
 Above, we observe that $\mathbb{E}[\epsilon \mid X] = 0$. Thus, we have $\mathbb{E}[\epsilon \mid X] = \mathbb{E}[\epsilon]$. That is, residual $\epsilon$ and input $X$ are **mean independent**. Mean independence also implies uncorrelatedness, $\textrm{Cov}(\epsilon, X)=0$. Note that if $\epsilon$ has a non-zero mean then we can incorporate that into $r(X)$ as an additive constant.
 </span>
  $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$. The residual $\epsilon_j = X_j - \hat{f}_j(\textrm{PA}_j)$ then gives us the (possibly mean-shifted) noise variable that is **uncorrelated** to parents $\textrm{PA}_j$, i.e. $\mathrm{Cov}(\epsilon_j, \textrm{PA}_j)=0$. 
