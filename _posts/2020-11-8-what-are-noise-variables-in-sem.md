@@ -50,7 +50,7 @@ $$
 <!-- <span style="display: inline-block; visibility:hidden">space</span> -->
 Above, we observe that $\mathbb{E}[\epsilon \mid X] = 0$. Thus, we have $\mathbb{E}[\epsilon \mid X] = \mathbb{E}[\epsilon]$. That is, residual $\epsilon$ and input $X$ are **mean independent**. Mean independence also implies uncorrelatedness, $\textrm{Cov}(\epsilon, X)=0$. Note that if $\epsilon$ has a non-zero mean then we can incorporate that into $r(X)$ as an additive constant.
 </span>
- $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$. The residual $\epsilon_Y = Y - \hat{f}_j(\textrm{PA}_j)$ then gives us the (possibly mean-shifted) noise variable that is **uncorrelated** to parents $\textrm{PA}_j$, i.e. $\mathrm{Cov}(\epsilon_Y, \textrm{PA}_j)=0$. 
+ $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$. The residual $\epsilon_j = X_j - \hat{f}_j(\textrm{PA}_j)$ then gives us the (possibly mean-shifted) noise variable that is **uncorrelated** to parents $\textrm{PA}_j$, i.e. $\mathrm{Cov}(\epsilon_j, \textrm{PA}_j)=0$. 
 
 Note that zero correlation is a weaker condition than statistical independence. The latter implies the former, but not the other way around. In special cases (e.g. multivariate Gaussian distribution), however, mean independence implies statistical independence (see <a href="https://en.wikipedia.org/wiki/Normally_distributed_and_uncorrelated_does_not_imply_independent">here</a>). Therefore for a linear regression with joint Gaussian distribution we can recover the noise up to statistical independence.
 
