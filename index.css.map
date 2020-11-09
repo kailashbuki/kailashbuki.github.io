@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "index.css",
+	"sources": [
+		"index.scss"
+	],
+	"sourcesContent": [
+		"div.epigraph {\n    margin: 0 !important;\n}\n\ndiv.epigraph > blockquote {\n    margin-top: 0em;\n    margin-bottom: 0em;\n}\n\n.lemma {\n    font-style: italic;\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,GAAG,AAAA,SAAS,CAAC;EACT,MAAM,EAAE,YAAY;CACvB;;AAED,AAAA,GAAG,AAAA,SAAS,GAAG,UAAU,CAAC;EACtB,UAAU,EAAE,GAAG;EACf,aAAa,EAAE,GAAG;CACrB;;AAED,AAAA,MAAM,CAAC;EACH,UAAU,EAAE,MAAM;CACrB"
+}
