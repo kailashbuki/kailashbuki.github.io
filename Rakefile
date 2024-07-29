@@ -30,11 +30,11 @@ task :publish => [:generate] do
     system "git init"
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
-    system "git config user.email kailash.buki@gmail.com"
+    system "git config user.email 111277+kailashbuki@users.noreply.github.com"
     system "git config user.name Kailash Budhathoki"
     system "git commit -m #{message.inspect}"
     system "git remote add origin git@github.com:#{GITHUB_REPONAME}.git"
-    system "git push origin master --force"
+    system "git push origin HEAD:master --force"
 
     Dir.chdir pwd
   end
