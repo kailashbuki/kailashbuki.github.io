@@ -2,12 +2,13 @@
 layout: post
 title: What are noise variables in Structural Equation Model?
 date: 8 November 2020
+published: true
 ---
 
 Given a causal graph $$\mathcal{G}$$<label for="sn-causalgraph" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-causalgraph" class="margin-toggle"/><span class="sidenote">A causal graph is a directed acyclic graph that represents data-generating process that operates sequentially along its arrows.</span> of variables $$X_1, \dotsc, X_n$$,
 a structural equation model (SEM) represents the data-generating process of each node $$X_j$$ as a function $$f_j$$ of its parents $$\mathrm{PA}_j$$ in $$\mathcal{G}$$, and **unobserved** noise $$N_j$$, i.e.
 \\[X_j := f_j(\textrm{PA}_j, N_j),\\]
-where noise variables $N_1, \dotsc, N_n$ are statistically jointly independent. <span class="marginnote">A toy causal graph alongside its SEM. ![Toy SCM](/images/sem.png)</span> Each structural assignment represents the <i>causal mechanism</i> that generates child $X_j$ from its parents $\mathrm{PA}_j$. Here, we will explore two questions regarding unobserved noise variables:
+where noise variables $N_1, \dotsc, N_n$ are statistically jointly independent. <span class="marginnote">A toy causal graph alongside its SEM. ![Toy SCM](../assets/images/sem.png)</span> Each structural assignment represents the <i>causal mechanism</i> that generates child $X_j$ from its parents $\mathrm{PA}_j$. Here, we will explore two questions regarding unobserved noise variables:
 
 <h3>What do noise variables represent in reality?</h3>
 
@@ -24,7 +25,7 @@ deterministic causal mechanism $Y := f(X, n)$. For a non-smooth function, for in
 Learning such SCM (with $\xi := |\mathcal{N}|$ functions) from finite data is difficult, specially as noise $N$ is <i>unobserved</i>.
 
 
-This problem of learning SEMs from data for a given causal graph is also known as "SEM Identification Problem" {% cite spirtes:1998:linear-sem-identification %}. Although SEM identification is infeasible for a generic class of SEMs as shown above, the problem becomes feasible with additional assumptions that restrict the class of SEMs. [Tian (2009)](#tian:2009:linear-sem-identification)<span style="display:none">{% cite tian:2009:linear-sem-identification %}</span>, for instance, studied identifiability criteria for a class of linear SEMs---also known as linear additive noise models (ANMs)---with the possibility of having correlated noise variables. For ANMs, a more general (but **weaker**) identification result is possible without restricting the class of functions. 
+This problem of learning SEMs from data for a given causal graph is also known as "SEM Identification Problem" {% cite spirtes:1998:linear-sem-identification %}. Although SEM identification is infeasible for a generic class of SEMs as shown above, the problem becomes feasible with additional assumptions that restrict the class of SEMs. [Tian (2009)](#tian:2009:linear-sem-identification)<span style="display:none">{% cite tian:2009:linear-sem-identification %}</span>, for instance, studied identifiability criteria for a class of linear SEMs---also known as linear additive noise models (ANMs)---with the possibility of having correlated noise variables. For ANMs, a more general (but **weaker**) identification result is possible without restricting the class of functions.
 
 Suppose that the causal graph $\mathcal{G}$ is induced by ANM. That is, the structural assignment of each node $X_j$ in $\mathcal{G}$ consists of an _additive_ noise:
 \\[
@@ -32,16 +33,16 @@ Suppose that the causal graph $\mathcal{G}$ is induced by ANM. That is, the stru
 \\]
 
 Then, from a sample drawn from the joint distribution $P_{X_j, \mathrm{PA}_j}$, we can estimate $f_j$ using regression<label for="sn-regression" class="margin-toggle sidenote-number"></label><input type="checkbox" id="sn-regression" class="margin-toggle"/><span class="sidenote">
-A **regression function** $r:\mathcal{X} \rightarrow \mathcal{Y}$ (where $\mathcal{Y}$ is often $\mathbb{R}$) gives us the expected value of the response variable $Y$ given an instance $x$ of the regressor $X$, i.e. $r(x) = \mathbb{E}[Y \mid X=x]$. It may belong to some finite (e.g. set of straight lines) or infinite family $\mathcal{R} \ni r$. A regression model from any family $\mathcal{R}$ can always be written as 
+A **regression function** $r:\mathcal{X} \rightarrow \mathcal{Y}$ (where $\mathcal{Y}$ is often $\mathbb{R}$) gives us the expected value of the response variable $Y$ given an instance $x$ of the regressor $X$, i.e. $r(x) = \mathbb{E}[Y \mid X=x]$. It may belong to some finite (e.g. set of straight lines) or infinite family $\mathcal{R} \ni r$. A regression model from any family $\mathcal{R}$ can always be written as
 \\[
     Y = r(X) + \epsilon,
 \\]
-where $\mathbb{E}[\epsilon] = 0$. This is because we can define $\epsilon = Y - r(X)$ s.t. $Y = Y + r(X) - r(X)$ $= r(X) + \epsilon$, and mean of the residual $\epsilon$ is 
+where $\mathbb{E}[\epsilon] = 0$. This is because we can define $\epsilon = Y - r(X)$ s.t. $Y = Y + r(X) - r(X)$ $= r(X) + \epsilon$, and mean of the residual $\epsilon$ is
 <span style="display: inline-block; visibility:hidden">space more </span>
 $$
     \begin{align}
     \mathbb{E}[\epsilon] &= \mathbb{E}[\mathbb{E}[\epsilon \mid X]]\\
-                         &= \mathbb{E}[\mathbb{E}[ Y - r(X) \mid X]]\\ 
+                         &= \mathbb{E}[\mathbb{E}[ Y - r(X) \mid X]]\\
                          &= \mathbb{E}[\mathbb{E}[ Y  \mid X] - \mathbb{E}[r(X) \mid X]]\\
                          &= \mathbb{E}[r(X) - r(X)]\\
                          &= 0
@@ -50,7 +51,7 @@ $$
 <!-- <span style="display: inline-block; visibility:hidden">more space</span> -->
 Above, we observe that $\mathbb{E}[\epsilon \mid X] = 0$. Thus, we have $\mathbb{E}[\epsilon \mid X] = \mathbb{E}[\epsilon]$. That is, residual $\epsilon$ and input $X$ are **mean independent**. Mean independence also implies uncorrelatedness, $\textrm{Cov}(\epsilon, X)=0$. Note that if $\epsilon$ has a non-zero mean then we can incorporate that into $r(X)$ as an additive constant.
 </span>
- $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$. The residual $\epsilon_j = X_j - \hat{f}_j(\textrm{PA}_j)$ then gives us the (possibly mean-shifted) noise variable that is **uncorrelated** to parents $\textrm{PA}_j$, i.e. $\mathrm{Cov}(\epsilon_j, \textrm{PA}_j)=0$. 
+ $\hat{f}_j(\textrm{pa}_j) = \mathbb{E}[X_j \mid \textrm{PA}_j=\textrm{pa}_j]$. The residual $\epsilon_j = X_j - \hat{f}_j(\textrm{PA}_j)$ then gives us the (possibly mean-shifted) noise variable that is **uncorrelated** to parents $\textrm{PA}_j$, i.e. $\mathrm{Cov}(\epsilon_j, \textrm{PA}_j)=0$.
 
 Note that zero correlation is a weaker condition than statistical independence. The latter implies the former, but not the other way around. In special cases (e.g. multivariate Gaussian distribution), however, mean independence implies statistical independence (see <a href="https://en.wikipedia.org/wiki/Normally_distributed_and_uncorrelated_does_not_imply_independent">here</a>). Thus, for jointly Gaussian distributed noise and parents, we can recover the noise up to statistical independence.
 
