@@ -65,7 +65,9 @@ Footnotes
         Y = r(X) + \epsilon,
     \\]
     where $\mathbb{E}[\epsilon] = 0$. This is because we can define $\epsilon = Y - r(X)$ s.t. $Y = Y + r(X) - r(X)$ $= r(X) + \epsilon$, and mean of the residual $\epsilon$ is
-    <span style="display: inline-block; visibility:hidden">space more </span>
+    <!-- <div style="display: inline-block; visibility:hidden">space more </div> -->
+    <div style="clear:both"></div>
+    <div style="margin:auto;">
     $$
         \begin{align}
         \mathbb{E}[\epsilon] &= \mathbb{E}[\mathbb{E}[\epsilon \mid X]]\\
@@ -75,7 +77,9 @@ Footnotes
                             &= 0
         \end{align}
     $$
+    </div>
     <!-- <span style="display: inline-block; visibility:hidden">more space</span> -->
+    <div style="clear:both"></div>
     Above, we observe that $\mathbb{E}[\epsilon \mid X] = 0$. Thus, we have $\mathbb{E}[\epsilon \mid X] = \mathbb{E}[\epsilon]$. That is, residual $\epsilon$ and input $X$ are **mean independent**. Mean independence also implies uncorrelatedness, $\textrm{Cov}(\epsilon, X)=0$. Note that if $\epsilon$ has a non-zero mean then we can incorporate that into $r(X)$ as an additive constant.
 
 [^ml_estimation]:
