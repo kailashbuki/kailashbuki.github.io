@@ -1,44 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<html lang="en-us">
 
-    {% include meta.html %}
+  {% include head.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <body class="theme-base-08">
 
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/tufte.css"/>
-    <link rel="stylesheet/less" href="{{ site.baseurl }}/assets/index.css"/>
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-    <script>
-      MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']]
-        }
-      };
-    </script>
-    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
-  </head>
+    {% include sidebar.html %}
 
-  <body>
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <small>{{ site.tagline }}</small>
+          </h3>
+        </div>
+      </div>
 
-    <article>
-      {{ content }}
-    </article>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          <!-- {% include svg-icons.html %} -->
-          <span>Disclaimer: The opinions expressed here are my own and do not necessarily represent those of current or past employers.</span>
-        </footer>
+      <div class="container content">
+        {{ content }}
       </div>
     </div>
 
-    {% include analytics.html %}
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='{{ site.baseurl }}/public/js/script.js'></script>
   </body>
 </html>

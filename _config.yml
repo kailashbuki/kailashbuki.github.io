@@ -65,6 +65,8 @@ version: v1.2.0
 kramdown:
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
+  # to render urls with hyperlinks in jekyll scholar
+  # parse_block_html: true
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
@@ -91,6 +93,8 @@ exclude:
 
 # jekyll scholar config
 scholar:
-  style: association-for-computing-machinery
+  style: apa
   locale: en
-
+  # bibtex_filters:
+  #   - latex
+  #   - markdown

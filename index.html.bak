@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<h1 id="tufte-css">{{ site.name }} / <a href="{{ site.baseurl}}{% link about.md %}"><i>About me</i></a><h1>
+<!-- <p class="subtitle">{{ site.description }}</p> -->
+
+<section>
+  <h1><b>Hot Topics</b></h1>
+  <div class="posts">
+    <h2><a href="https://www.amazon.jobs/en/jobs/2671082/applied-scientist-ii-ai-research-education" target="_blank">Are you an expert in optimizing foundation models for inference? Come join us!</a></h2>
+    <h2><a href="https://sites.google.com/view/kdd-2024-tutorial-inf-opt-/home" target="_blank">Are you interested in optimizing foundation models for inference? Check out our KDD'24 tutorial</a></h2>
+    </div>
+</section>
+
+<section>
+  <h1><b>Blog Posts</b></h1>
+  <div class="posts">
+    <!-- <ul> -->
+      {% for post in site.posts %}
+        <h2><i class="fa fa-home"></i> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      {% endfor %}
+    <!-- </ul> -->
+  </div>
+</section>
