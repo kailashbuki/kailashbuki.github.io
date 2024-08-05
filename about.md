@@ -6,8 +6,8 @@ permalink: /about/
 
 ## Contact
 
-- Work: `{kaibud}@amazon.de`       (without the curly braces)
-- Home: `{kailash.buki}@gmail.com` (without the curly braces)
+- Work: `kaibud@`       (append amazon.com)
+- Home: `kailash.buki@` (append gmail.com)
 
 
 ## Bio
