@@ -23,11 +23,11 @@ I studied Bachelor's Degree in Computer Engineering at the [Institute of Enginee
 
 kailash [dot] buki [at] gmail [dot] com
 
-## Publications
+## Research
 
 See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
 
-<u>Selected articles</u>
+<u>Selected artifacts</u>
 - [New method identifies the root causes of statistical outliers](https://www.amazon.science/blog/new-method-identifies-the-root-causes-of-statistical-outliers), Amazon Science Blog, 2022<br/>
 🎉 [Top-10 blog posts of 2022 by Amazon Science](https://www.amazon.science/blog/top-10-blog-posts-of-2022)
 - [Causal structure-based root cause analysis of outliers](https://proceedings.mlr.press/v162/budhathoki22a/budhathoki22a.pdf), ICML, 2022<br/>
