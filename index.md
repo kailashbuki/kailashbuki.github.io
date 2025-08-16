@@ -20,10 +20,6 @@ Briefly, I also led the cross-org science effort within Amazon to deliver bias m
 In 2020, I received the Doctoral Degree in Computer Science from the [Saarland University](https://saarland-informatics-campus.de/), where I conducted my doctoral research at the [Max Planck Institute for Informatics](https://www.mpi-inf.mpg.de/home). During my PhD, I also interned at the [Amazon Research Lablet Tübingen](https://www.amazon.science/latest-news/amazons-fourth-r-d-center-in-germany-is-dedicated-to-open-ai-research) for 2.5 months in the spring of 2019. Earlier, in 2015, I completed my Master’s degree in Computer Science with honours from the [Saarland University](https://saarland-informatics-campus.de/). Prior to that I worked as a Software Developer at ImmuneSecurity A/S (now [LogPoint](https://www.logpoint.com/en/)) between 2011 and 2013.
 I studied Bachelor's Degree in Computer Engineering at the [Institute of Engineering, Pulchowk Campus](https://pcampus.edu.np/) in Nepal (2006-2010).
 
-## Contact
-
-kailash [dot] buki [at] gmail [dot] com
-
 ## Research
 
 I have been fortunate to collaborate with great colleagues across diverse research topics, but the common thread is a customer-centric approach to machine learning. Despite shifts in direction, my work consistently aims to create ML systems that deliver real value for customers. See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
