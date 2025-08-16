@@ -25,7 +25,21 @@ kailash [dot] buki [at] gmail [dot] com
 
 ## Publications
 
-See my up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
+See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
+
+<u>Selected articles</u>
+- [New method identifies the root causes of statistical outliers](https://www.amazon.science/blog/new-method-identifies-the-root-causes-of-statistical-outliers), Amazon Science Blog, 2022<br/>
+🎉 [Top-10 blog posts of 2022 by Amazon Science](https://www.amazon.science/blog/top-10-blog-posts-of-2022)
+- [Causal structure-based root cause analysis of outliers](https://proceedings.mlr.press/v162/budhathoki22a/budhathoki22a.pdf), ICML, 2022<br/>
+🚀 Launched in production
+- [Why did the distribution change?](https://proceedings.mlr.press/v130/budhathoki21a/budhathoki21a.pdf), AISTAT, 2021<br/>
+🚀 Launched in production
+- [Explaining the root causes of unit-level changes](https://arxiv.org/pdf/2206.12986), arXiv, 2022<br/>
+🚀 Launched in production
+- [Mitigating Bias in Multimodal Models via Query Transformation](https://patents.google.com/patent/US12229179B1/en), US Patent, 2025<br/>
+🚀 Launched in production
+- [Evaluating the Fairness of Discriminative Foundation Models in Computer Vision](https://arxiv.org/pdf/2310.11867), AIES, 2023<br/>
+🚀 Launched in production
 
 ## References
 
