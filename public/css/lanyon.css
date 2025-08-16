@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrap {
   position: relative;
   width: 100%;
+  /* margin-top: 1px; */
 }
 
 
@@ -445,12 +446,14 @@ a.pagination-item:hover {
 .theme-base-08 .sidebar,
 .theme-base-08 .sidebar-toggle:active,
 .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #ac4142;
+  /* background-color: #ac4142; */
+  background-color: #d9230f;
 }
 .theme-base-08 .container a,
 .theme-base-08 .sidebar-toggle,
 .theme-base-08 .related-posts li a:hover {
-  color: #ac4142;
+  /* color: #ac4142; */
+  color: #d9230f;
 }
 
 /* Orange */
