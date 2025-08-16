@@ -2,6 +2,7 @@
 layout: page
 title: Kailash Budhathoki
 ---
+
 ## News
 🕵 We’re hiring GPU Performance Engineers to accelerate AI inference at scale for Amazon Bedrock! If you’re passionate about optimizing GPU workloads, building high-performance distributed inference solutions and unlocking the efficiency of state-of-the-art foundation models, we should talk. Send your CV to kaibud [at] amazon [dot] com.
 
@@ -28,17 +29,17 @@ kailash [dot] buki [at] gmail [dot] com
 I have been fortunate to collaborate with great colleagues across diverse research topics, but the common thread is a customer-centric approach to machine learning. Despite shifts in direction, my work consistently aims to create ML systems that deliver real value for customers. See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
 
 <u>Selected artifacts</u>
+- [Mitigating Bias in Multimodal Models via Query Transformation](https://patents.google.com/patent/US12229179B1/en), US Patent, 2025<br/>
+🚀 Launched in production
+- [Evaluating the Fairness of Discriminative Foundation Models in Computer Vision](https://arxiv.org/pdf/2310.11867), AIES, 2023<br/>
+🚀 Launched in production
 - [New method identifies the root causes of statistical outliers](https://www.amazon.science/blog/new-method-identifies-the-root-causes-of-statistical-outliers), Amazon Science Blog, 2022<br/>
 🎉 [Top-10 blog posts of 2022 by Amazon Science](https://www.amazon.science/blog/top-10-blog-posts-of-2022)
 - [Causal structure-based root cause analysis of outliers](https://proceedings.mlr.press/v162/budhathoki22a/budhathoki22a.pdf), ICML, 2022<br/>
 🚀 Launched in production
-- [Why did the distribution change?](https://proceedings.mlr.press/v130/budhathoki21a/budhathoki21a.pdf), AISTAT, 2021<br/>
-🚀 Launched in production
 - [Explaining the root causes of unit-level changes](https://arxiv.org/pdf/2206.12986), arXiv, 2022<br/>
 🚀 Launched in production
-- [Mitigating Bias in Multimodal Models via Query Transformation](https://patents.google.com/patent/US12229179B1/en), US Patent, 2025<br/>
-🚀 Launched in production
-- [Evaluating the Fairness of Discriminative Foundation Models in Computer Vision](https://arxiv.org/pdf/2310.11867), AIES, 2023<br/>
+- [Why did the distribution change?](https://proceedings.mlr.press/v130/budhathoki21a/budhathoki21a.pdf), AISTAT, 2021<br/>
 🚀 Launched in production
 
 ## References
