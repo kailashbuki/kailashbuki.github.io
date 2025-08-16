@@ -29,6 +29,8 @@ I have been fortunate to collaborate with great colleagues across diverse resear
 🚀 Launched in production
 - [Evaluating the Fairness of Discriminative Foundation Models in Computer Vision](https://arxiv.org/pdf/2310.11867), AIES, 2023<br/>
 🚀 Launched in production
+- [AWS contributes novel causal machine learning algorithms to DoWhy Python library](https://www.amazon.science/blog/aws-contributes-novel-causal-machine-learning-algorithms-to-dowhy), Amazon Science Blog, 2022<br/>
+🚀 Official release of `gcm` package in DoWhy w/ major refactoring of DoWhy codebase
 - [New method identifies the root causes of statistical outliers](https://www.amazon.science/blog/new-method-identifies-the-root-causes-of-statistical-outliers), Amazon Science Blog, 2022<br/>
 🎉 [Top-10 blog posts of 2022 by Amazon Science](https://www.amazon.science/blog/top-10-blog-posts-of-2022)
 - [Causal structure-based root cause analysis of outliers](https://proceedings.mlr.press/v162/budhathoki22a/budhathoki22a.pdf), ICML, 2022<br/>
