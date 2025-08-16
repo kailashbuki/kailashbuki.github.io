@@ -26,7 +26,7 @@ kailash [dot] buki [at] gmail [dot] com
 
 ## Publications
 
-See my up-to-date publications on [Google Scholar](https://scholar.google.com/citations?user=O5yaQbgAAAAJ&hl=en).
+See my up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
 
 ## References
 
