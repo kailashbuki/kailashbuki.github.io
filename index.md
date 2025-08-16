@@ -25,7 +25,7 @@ kailash [dot] buki [at] gmail [dot] com
 
 ## Research
 
-See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
+I have been fortunate to collaborate with great colleagues across diverse research topics, but the common thread is a customer-centric approach to machine learning. Despite shifts in direction, my work consistently aims to create ML systems that deliver real value for customers. See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
 
 <u>Selected artifacts</u>
 - [New method identifies the root causes of statistical outliers](https://www.amazon.science/blog/new-method-identifies-the-root-causes-of-statistical-outliers), Amazon Science Blog, 2022<br/>
