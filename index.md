@@ -3,8 +3,8 @@ layout: page
 title: Kailash Budhathoki
 ---
 
-## News
-🕵 We’re hiring GPU Performance Engineers to accelerate AI inference at scale for Amazon Bedrock! If you’re passionate about optimizing GPU workloads, building high-performance distributed inference solutions and unlocking the efficiency of state-of-the-art foundation models, we should talk. Send your CV to kaibud [at] amazon [dot] com.
+<!-- ## News
+🕵 We’re hiring GPU Performance Engineers to accelerate AI inference at scale for Amazon Bedrock! If you’re passionate about optimizing GPU workloads, building high-performance distributed inference solutions and unlocking the efficiency of state-of-the-art foundation models, we should talk. Send your CV to kaibud [at] amazon [dot] com. -->
 
 ## Bio
 
