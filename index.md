@@ -25,6 +25,8 @@ I studied Bachelor's Degree in Computer Engineering at the [Institute of Enginee
 I have been fortunate to collaborate with great colleagues across diverse research topics, but the common thread is a customer-centric approach to machine learning. Despite shifts in direction, my work consistently aims to create ML systems that deliver real value for customers. See up-to-date publications on [Google Scholar](https://scholar.google.com/citations?hl=en&user=O5yaQbgAAAAJ&view_op=list_works&sortby=pubdate).
 
 <u>Selected artifacts</u>
+- [Block-Diagonal LoRA for Eliminating Communication Overhead in Tensor Parallel LoRA Serving](https://www.arxiv.org/pdf/2510.23346), NeurIPS, 2025<br/>
+®️ Patent pending.
 - [Mitigating Bias in Multimodal Models via Query Transformation](https://patents.google.com/patent/US12229179B1/en), US Patent, 2025<br/>
 🚀 Launched in production
 - [Evaluating the Fairness of Discriminative Foundation Models in Computer Vision](https://arxiv.org/pdf/2310.11867), AIES, 2023<br/>
