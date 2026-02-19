@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+       &middot; 
+    
+  </title>
+
+  
+  <link rel="canonical" href="/index.html.bak">
+  
+
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="/public/js/sidenotes.js"></script>
+
+  
+</head>
+
+
+  <body class="theme-base-08">
+
+    
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <!-- <div class="masthead"> -->
+        <!-- <div class="container"> -->
+          <!-- <h3 class="masthead-title"> -->
+            <!-- <a href="/" title="Home"></a>
+            <small></small> -->
+          <!-- </h3> -->
+        <!-- </div> -->
+      <!-- </div> -->
+
+      <div class="container content">
+        <h1 id="tufte-css">Kailash Budhathoki / <a href="/about/"><i>About me</i></a><h1>
+<!-- <p class="subtitle">Kailash Budhathoki</p> -->
+
+<section>
+  <h1><b>Hot Topics</b></h1>
+  <div class="posts">
+    <h2><a href="https://www.amazon.jobs/en/jobs/2671082/applied-scientist-ii-ai-research-education" target="_blank">Are you an expert in optimizing foundation models for inference? Come join us!</a></h2>
+    <h2><a href="https://sites.google.com/view/kdd-2024-tutorial-inf-opt-/home" target="_blank">Are you interested in optimizing foundation models for inference? Check out our KDD'24 tutorial</a></h2>
+    </div>
+</section>
+
+<section>
+  <h1><b>Blog Posts</b></h1>
+  <div class="posts">
+    <!-- <ul> -->
+      
+        <h2><i class="fa fa-home"></i> <a href="/what-are-noise-variables-in-sem/">What are noise variables in Structural Equation Model?</a></h2>
+      
+    <!-- </ul> -->
+  </div>
+</section>
+      </div>
+    </div>
+
+    <!-- <label for="sidebar-checkbox" class="sidebar-toggle"></label> -->
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>
